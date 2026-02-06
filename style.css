@@ -1,0 +1,78 @@
+/* Reset + base */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f4f6f8;
+    gap: 14px;
+    transition: 0.3s;
+}
+
+/* Paragraph */
+#para1{
+    max-width: 600px;
+    padding: 16px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Buttons (common) */
+button{
+    width: 200px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+/* Individual buttons */
+#btn1{ background: #7c4dff; color: white; }
+#btn2{ background: #ff5252; color: white; }
+#btn3{ background: #03a9f4; color: white; }
+#btn4{ background: #607d8b; color: white; }
+#buybtn{ background: #ff9800; color: white; }
+#darkmode{ background: #212121; color: white; }
+
+/* Hover effect */
+button:hover{
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Highlight class */
+.highlight{
+    color: #4a148c;
+    background: #f3e5f5;
+}
+
+/* Active Buy Button */
+.active-btn{
+    background-color: #2e7d32 !important;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Dark mode */
+.dark_mode{
+    background-color: #121212;
+    color: white;
+}
+
+.dark_mode #para1{
+    background: #1e1e1e;
+}
